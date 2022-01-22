@@ -1,0 +1,169 @@
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: white; 
+    }
+
+    :root {
+        --very-dark-desaturated blue: hsl(238, 29%, 16%);
+        --soft-red: hsl(14, 88%, 65%);
+
+        --soft-violet: hsl(273, 75%, 66%);
+        --soft-blue: hsl(240, 73%, 65%);
+
+        --very-dark-grayish-blue: hsl(237, 12%, 33%);
+        --dark-grayish-blue: hsl(240, 6%, 50%);
+
+        --light-grayish-blue: hsl(240, 5%, 91%);
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+        margin: 0 auto;
+        padding: 0;
+        font-size: 12px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 400;
+        color: var(--very-dark-grayish-blue);
+    }
+     
+    h1 {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    button {
+        font-weight: 400;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: var(--soft-red);   
+    }
+
+    button:after {
+        content: url("images/icon-arrow-down.svg");
+    }
+
+    .main_container {
+        border: 2px solid;
+        background-image: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+        position: relative;
+    }
+
+    .big_container {
+        background-color: white;
+        margin: 20% 8%;
+        border-radius: 20px;
+        font-weight: 400;
+    }
+
+    .plate {
+        text-align: center;
+    }
+
+    .plate img {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    .woman {
+        position: absolute;
+        top: 0;
+        width: 92%;
+        text-align: center;
+    }
+
+    .woman img {
+        width: 50%;
+
+    }
+
+    .faq_content {
+        margin-top: 0%;
+        padding: 5%;  
+    }
+
+    .faq_content div {
+        border-bottom: 2px solid var(--light-grayish-blue);
+        margin: 1% auto;
+        padding: 2%;
+    }
+
+    .collapse_button {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        outline: none;
+    }
+
+    .collapse_button:after {
+        content: url("images/icon-arrow-down.svg");
+        float: right;
+    }
+
+    .collapse_button--active:after {
+        transform: rotate(180deg);
+    }
+
+    .collapse_content {
+        padding: 1% 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s;
+    }
+
+    @media (min-width: 800px) {
+
+    .main_container {
+        padding: 10%;
+
+    }
+    
+    .big_container {
+        margin: 0;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        background-image: url("images/bg-pattern-desktop.svg"), url("images/illustration-woman-online-desktop.svg"), url("images/illustration-box-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 50%, 50%, 40%; 
+        background-position: left, left, -25%;
+        background-position-y: center, center, bottom;
+    }
+
+    .plate{
+        display: none;
+    }
+
+    .woman {
+        position: relative;
+        display: block;
+    }
+
+    .woman img {
+        display: none;
+    }
+
+    .faq_content {
+        margin: 3% auto;
+        padding: 1%;
+        padding-left: 10%;
+    }
+
+    .faq_content h1{
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+}
